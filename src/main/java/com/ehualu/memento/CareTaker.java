@@ -4,13 +4,13 @@ package com.ehualu.memento;
  * Created by bright on 16-7-4.
  */
 public class CareTaker {
-    private Memento memento;
+    private IMemento memento;
 
-    public Memento getMemento() {
+    public IMemento getMemento() {
         return memento;
     }
 
-    public void setMemento(Memento memento) {
+    public void setMemento(IMemento memento) {
         this.memento = memento;
     }
 

@@ -14,15 +14,15 @@ public class Client {
         ori.setState3("万众创业");
         System.out.println("初始化状态："+ori);
 
-        Memento memento = ori.createMemento();
-
+        IMemento memento = ori.createMemento();
+        taker.setMemento(memento);
 
         ori.setState1("软件");
         ori.setState2("架构");
         ori.setState3("优秀");
         System.out.println("修改后状态："+ori);
 
-        ori.restoreMemento(memento);
+        ori.restoreMemento(taker.getMemento());
 
         System.out.println("恢复后状态："+ori);
 
