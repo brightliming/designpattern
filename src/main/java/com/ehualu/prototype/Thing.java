@@ -9,7 +9,7 @@ public class Thing implements Cloneable {
     private ArrayList<String> arrayList = new ArrayList<String>();
 
 
-    public ArrayList<String> getArrayList() {
+    public  ArrayList<String> getArrayList() {
         return arrayList;
     }
 
