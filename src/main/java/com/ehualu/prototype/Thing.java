@@ -26,8 +26,7 @@ public class Thing implements Cloneable {
         Thing thing = null;
         try {
             thing = (Thing)super.clone();
-            ArrayList<String> arrayList = (ArrayList) this.arrayList.clone();
-            thing.setArrayList(arrayList);
+            thing.arrayList = (ArrayList) this.arrayList.clone();
 
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
